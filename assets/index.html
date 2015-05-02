@@ -44,7 +44,7 @@ var callback = function() {
   }, false);
 };
 
-if (JSBridge) {
+if (typeof JSBridge !== 'undefined') {
   callback();
 } else {
   document.addEventListener('JSBridgeReady', function() {
